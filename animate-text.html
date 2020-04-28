@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.6">
+  <style type="text/css">
+    .horizontal {
+      flex-direction: row;
+      font: 200px Helvetica;
+    }
+
+    .vertical {
+      animation: scroll-down 3s cubic-bezier(1, -0.04, 0, 1.01) infinite;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .hidden-overflow {
+      display: inline-block;
+      vertical-align: top;
+      overflow: hidden;
+      height: 1.15em;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .blue {
+      color: cyan;
+    }
+
+    .pink {
+      color: pink;
+    }
+
+    @keyframes scroll-down {
+
+      0% {
+        transform: translateY(0%);
+      }
+
+      10% {
+        transform: translateY(0%);
+      }
+
+      45% {
+        transform: translateY(-33%);
+      }
+
+      80% {
+        transform: translateY(-66%);
+      }
+
+      100% {
+        transform: translateY(0%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <span class="horizontal">
+    <span>Text is</span>
+    <div class="hidden-overflow">
+      <div class="vertical">
+        <p class="green">Fun</p>
+        <p class="blue">Rich</p>
+        <p class="pink">Complex</p>
+      </div>
+    </div>
+  </span>
+</body>
+
+</html>
