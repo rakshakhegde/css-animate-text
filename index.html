@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <style type="text/css">
+        span {
+            font: 100px Helvetica;
+            line-height: 1.15;
+        }
+
+        .vertical {
+            animation: scroll-down 3s cubic-bezier(1, 0, 0, 1) infinite;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        .hidden-overflow {
+            display: inline-block;
+            vertical-align: top;
+            overflow: hidden;
+            height: 1.15em;
+        }
+
+        .green {
+            color: green;
+        }
+
+        .cyan {
+            color: cyan;
+        }
+
+        .magenta {
+            color: magenta;
+        }
+
+        @keyframes scroll-down {
+
+            10% {
+                transform: translateY(0%);
+            }
+
+            45% {
+                transform: translateY(-33%);
+            }
+
+            80% {
+                transform: translateY(-66%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <span>Text is
+        <div class="hidden-overflow">
+            <div class="vertical">
+                <p class="green">Fun</p>
+                <p class="cyan">Rich</p>
+                <p class="magenta">Complex</p>
+            </div>
+        </div>
+    </span>
+</body>
+
+</html>
