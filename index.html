@@ -7,19 +7,15 @@
             line-height: 1.15;
         }
 
-        .vertical {
-            animation: scroll-down 3s cubic-bezier(1, 0, 0, 1) infinite;
-        }
-
-        p {
-            margin: 0;
-        }
-
         .hidden-overflow {
             display: inline-block;
             vertical-align: top;
             overflow: hidden;
             height: 1.15em;
+        }
+
+        .vertical {
+            animation: scroll-down 3s cubic-bezier(1, 0, 0, 1) infinite;
         }
 
         @keyframes scroll-down {
@@ -35,6 +31,10 @@
             80% {
                 transform: translateY(-66%);
             }
+        }
+
+        p {
+            margin: 0;
         }
     </style>
 </head>
