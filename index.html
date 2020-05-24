@@ -36,6 +36,11 @@
         p {
             margin: 0;
         }
+
+        .flip-horizontal {
+            display: inline-block;
+            transform: scaleX(-1);
+        }
     </style>
 </head>
 
@@ -45,7 +50,9 @@
             <div class="vertical">
                 <p style="color: green;">Fun</p>
                 <p style="color: cyan;">Rich</p>
-                <p style="color: magenta;">Complex</p>
+                <p style="color: magenta;">
+                    Compl<span class="flip-horizontal">e</span>x
+                </p>
             </div>
         </div>
     </span>
